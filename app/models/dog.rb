@@ -7,7 +7,10 @@ class Dog < Sinatra::Base
     @name = name 
     @breed = breed
     @age = age
+    DOGS << self 
   end 
+  
+  
   
 
 end 
