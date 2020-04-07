@@ -1,4 +1,4 @@
-class Dog < Sinatra::Base 
+class Dog 
   attr_accessor :name, :breed, :age
   
   DOGS = []
@@ -10,7 +10,9 @@ class Dog < Sinatra::Base
     DOGS << self 
   end 
   
-  
+  def self.all 
+    DOGS
+  end 
   
 
 end 
